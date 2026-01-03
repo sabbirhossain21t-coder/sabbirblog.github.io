@@ -1,59 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Our NGO</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>My Professional Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg,#ff512f,#dd2476);
+  color:white;
+}
+
+header{
+  text-align:center;
+  padding:40px;
+}
+
+header h1{
+  font-size:40px;
+}
+
+header p{
+  font-size:20px;
+}
+
+section{
+  padding:40px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.card{
+  background:white;
+  color:black;
+  padding:30px;
+  margin:20px 0;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card h2{
+  color:#dd2476;
+}
+
+.button{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 25px;
+  background:#dd2476;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  font-size:18px;
+}
+
+.button:hover{
+  background:#b21f66;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,0.3);
+  font-size:16px;
+}
+
+form{
+  background:white;
+  color:black;
+  max-width:500px;
+  margin:30px auto;
+  padding:30px;
+  border-radius:15px;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  background:#dd2476;
+  color:white;
+  border:none;
+  border-radius:25px;
+  font-size:18px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#events">Events</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <h1>Welcome to My Website</h1>
+  <p>Simple • Colorful • Professional</p>
 </header>
 
-<section id="home">
-  <h1>Welcome to Our NGO</h1>
-  <p>Serving the community and making a positive difference every day.</p>
-  <a href="https://facebook.com" target="_blank" class="social-btn">Facebook</a>
-  <a href="https://youtube.com" target="_blank" class="social-btn">YouTube</a>
-  <img src="images/home.jpg" alt="NGO Home Image">
-</section>
+<section>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      This is my first professional website.  
+      I am learning web design and technology.
+    </p>
+  </div>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>We are dedicated volunteers working for education, health, and community welfare.</p>
-  <img src="images/about.jpg" alt="About Image">
-</section>
+  <div class="card">
+    <h2>My Services</h2>
+    <p>
+      ✔ Website Design <br>
+      ✔ Learning Technology <br>
+      ✔ Student Projects
+    </p>
+    <a href="#" class="button">Contact Me</a>
+  </div>
 
-<section id="projects">
-  <h2>Our Projects</h2>
-  <p>We run projects that impact lives positively. Here are some examples:</p>
-  <img src="images/project1.jpg" alt="Project 1">
-  <img src="images/project2.jpg" alt="Project 2">
-</section>
+  <div class="card">
+    <h2>My Website Link</h2>
+    <p>Share this website with others:</p>
+    <a href="https://jovbyfree.kesug.com" class="button">Visit Website</a>
+  </div>
 
-<section id="events">
-  <h2>Upcoming Events</h2>
-  <p>Join our events and make a difference.</p>
-  <img src="images/event1.jpg" alt="Event 1">
-  <img src="images/event2.jpg" alt="Event 2">
-</section>
+  <!-- Contact Form Section -->
+  <section style="padding:40px; background:#ffffff; color:black; border-radius:15px;">
+    <h2 style="color:#dd2476;">Contact Me</h2>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@ourngo.org | Phone: +880123456789</p>
-  <img src="images/contact.jpg" alt="Contact Image">
+    <form action="sendmail.php" method="post">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
 </section>
 
 <footer>
-  © 2026 Our NGO | <a href="https://facebook.com" target="_blank" style="color:white;">Facebook</a> | <a href="https://youtube.com" target="_blank" style="color:white;">YouTube</a>
+  © 2026 My Website | All Rights Reserved
 </footer>
 
 </body>
-  </html>
+</html>
